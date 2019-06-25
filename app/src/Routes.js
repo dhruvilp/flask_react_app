@@ -6,7 +6,8 @@ import Profile from "./pages/Profile";
 import Name from "./pages/Name";
 import TableApi from "./pages/TableApi";
 import TableStyle from "./pages/TableStyle";
-import TableResponsive from "./pages/TableResponsive/TableResponsive";
+import TableResponsive from "./pages/TableResponsive";
+import TableButtons from "./pages/TableButtons";
 
 class Routes extends React.Component{
     render(){
@@ -18,6 +19,7 @@ class Routes extends React.Component{
                 <Route exact path="/tablestyle" component={TableStyle} />
                 <Route exact path="/tableapi" component={TableApi} />
                 <Route exact path="/tableresponsive" component={TableResponsive} />
+                <Route exact path="/tablebuttons" component={TableButtons} />
                 <Route 
                     render={function () {
                         return <h1>Not Found!</h1>;
